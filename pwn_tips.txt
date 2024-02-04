@@ -4,3 +4,4 @@ AAAA,%7$p
 AAAA,%7$s
 sudo sysctl -w kernel.randomize_va_space=0
 sudo gdb -q -p $(ps aux | grep ./vaulty | grep -v socat | grep -v grep | awk '{print $2}')
+one_gadget libc.so.6
