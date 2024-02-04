@@ -5,3 +5,5 @@ AAAA,%7$s
 sudo sysctl -w kernel.randomize_va_space=0
 sudo gdb -q -p $(ps aux | grep ./vaulty | grep -v socat | grep -v grep | awk '{print $2}')
 one_gadget libc.so.6
+./rp-lin-x64 --file ./vaulty  --rop=1 | grep ret
+sudo docker run -v /home/user/Documents/InsomnihackTeaser2024:/pwn -p 8080:8080 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" -it ubuntu:pwn_Vaulty
