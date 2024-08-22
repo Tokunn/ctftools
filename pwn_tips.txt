@@ -7,3 +7,6 @@ sudo gdb -q -p $(ps aux | grep ./vaulty | grep -v socat | grep -v grep | awk '{p
 one_gadget libc.so.6
 ./rp-lin-x64 --file ./vaulty  --rop=1 | grep ret
 sudo docker run -v /home/user/Documents/InsomnihackTeaser2024:/pwn -p 8080:8080 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" -it ubuntu:pwn_Vaulty
+gcc q2.c -O0 -fno-stack-protector -no-pie
+# peda / pattc 120
+# peda / patto AA-AA(A
